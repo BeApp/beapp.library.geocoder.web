@@ -1,0 +1,24 @@
+{
+    "name": "beapp/geocoder",
+    "type": "library",
+    "description": "Simple library for goecoding",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Damien Villeneuve",
+            "email": "d.villeneuve@beapp.fr"
+        }
+    ],
+    "require": {
+        "php": ">=7.1",
+        "psr/log": "^1.1"
+    },
+    "require-dev": {
+        "symplify/monorepo-builder": "^4.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Beapp\\Geocoder\\Core\\": "packages/Core/"
+        }
+    }
+}
