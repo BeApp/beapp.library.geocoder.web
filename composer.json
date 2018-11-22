@@ -1,24 +1,39 @@
 {
     "name": "beapp/geocoder",
     "type": "library",
-    "description": "Simple library for goecoding",
-    "license": "MIT",
+    "keywords": [
+        "geocoder"
+    ],
+    "version": "0.1.0",
     "authors": [
         {
             "name": "Damien Villeneuve",
             "email": "d.villeneuve@beapp.fr"
         }
     ],
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    },
+    "description": "Simple library for geocoding",
+    "license": "MIT",
     "require": {
         "php": ">=7.1",
-        "psr/log": "^1.1"
+        "psr/log": "^1.1",
+        "ext-json": "*"
     },
     "require-dev": {
         "symplify/monorepo-builder": "^4.7"
     },
     "autoload": {
         "psr-4": {
-            "Beapp\\Geocoder\\Core\\": "packages/Core/"
+            "Beapp\\Geocoder\\Core\\": "packages/Core/",
+            "Beapp\\Geocoder\\Transport\\Google\\": "packages/TransportGoogle/"
         }
+    },
+    "replace": {
+        "beapp/geocoder-core": "self.version",
+        "beapp/geocoder-transport-google": "self.version"
     }
 }

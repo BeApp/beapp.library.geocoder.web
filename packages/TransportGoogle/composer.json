@@ -1,8 +1,9 @@
 {
-    "name": "beapp/geocoder-core",
-    "description": "Core library for geocoding",
+    "name": "beapp/geocoder-transport-google",
+    "description": "Google transport for geocoding library",
     "keywords": [
-        "geocoder"
+        "geocoder",
+        "google"
     ],
     "type": "library",
     "license": "MIT",
@@ -15,11 +16,12 @@
     ],
     "require": {
         "php": ">=7.1",
-        "psr/log": "^1.1"
+        "ext-json": "*",
+        "beapp/geocoder-core": "^0.1.0"
     },
     "autoload": {
         "psr-4": {
-            "Beapp\\Geocoder\\Core\\": ""
+            "Beapp\\Geocoder\\Transport\\Google\\": ""
         }
     }
 }
