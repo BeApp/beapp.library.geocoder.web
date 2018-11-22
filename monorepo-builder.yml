@@ -7,3 +7,4 @@ parameters:
   # for "split" command
   directories_to_repositories:
     packages/Core: 'git@github.com:BeApp/beapp.library.geocoder-core.web.git'
+    packages/TransportGoogle: 'git@github.com:BeApp/beapp.library.geocoder-transport-google.web.git'
